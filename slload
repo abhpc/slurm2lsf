@@ -1,5 +1,5 @@
 #! /bin/bash
-# Command similar to bqueues
+# Command similar to lsload
 # Output example:
 # HOSTNAME STATE      CPUS   CPU_LOAD   FREE_MEM   TMP_DISK
 # A36      alloc      16     0.00       31021      0
