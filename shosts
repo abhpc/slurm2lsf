@@ -1,0 +1,9 @@
+#! /bin/bash
+# Command similar to bhosts
+# Output example:
+# HOSTNAME STATE      CPUS    CPUS(A/I/O/T) FREE_MEM   REASON
+# A01      idle       16          0/16/0/16    31024     none
+# A02      idle       16          0/16/0/16    31082     none
+#
+
+sinfo -o "%8n %10t %6c %.14C %.8e %.8E"
