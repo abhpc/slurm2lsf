@@ -6,4 +6,5 @@
 #
 
 export SQUEUE_USERS=$USER
+export SQUEUE_SORT="-t"
 export SQUEUE_FORMAT="%6i %7u %4t %10P %10j %20V %10M %4D %6C %N"
