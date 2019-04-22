@@ -1,0 +1,76 @@
+较为重要的参数
+
+1. Account可设定、修改参数
+modify account
+
+DefaultQOS=
+该关联及其子项默认的QOS。如果直接指定到用户(user)的QOS，则该设置会被覆盖。如果想清除之
+前的设置的话，将其设置为-1。
+
+Description=
+描述。
+
+GrpTRES=
+可以为此关联以及作为此关联的子项的所有关联聚合分配最大TRES运行作业数。
+
+GrpJobs=
+此关联的聚合运行作业的最大数量以及作为此关联子级的所有关联。
+
+GrpNodes=
+可以为此关联以及作为此关联的子级的所有关联聚合分配运行作业的最大节点数。
+
+GrpSubmitJob=
+
+GrpWall=
+
+MaxTRESMins=
+
+MaxTRES=
+
+MaxJobs=
+
+MaxNodes=
+
+MaxSubmitJobs=
+
+MaxWall=
+
+Names=
+
+Organization=
+
+Parent=
+
+QosLevel=
+
+RawUsage= (with admin privileges only)
+
+(where options)
+以下几条为accout特有
+Clusters=
+
+DefaultQOS=
+
+Descriptions=
+
+Names=
+
+Organizations=
+
+Parent=
+
+QosLevel=
+
+
+2. QOS可设定、修改参数
+
+modify qos         - (set options) Description=, Flags=, GraceTime=,
+                            GrpJobs=, GrpSubmitJob=, GrpTRES=, GrpTRESMins=,
+                            GrpWall=,
+                            MaxJobs=, MaxSubmitJobsPerUser=, MaxTRESMins=,
+                            MaxTRESPerJob=, MaxTRESPerNode=, MaxTRESPerUser=,
+                            MaxWall=, Names=, Preempt=, PreemptMode=,
+                            Priority=, RawUsage= (admin only),
+                            UsageFactor=, and UsageThreshold=
+                            (where options) Descriptions=, ID=, Names=
+                            and PreemptMode=
