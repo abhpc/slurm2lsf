@@ -1,0 +1,3 @@
+#! /bin/bash
+
+sacct -o "jobid,partition,account,alloccpus,cputimeraw,state" -X
