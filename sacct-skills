@@ -1,2 +1,5 @@
-1. 统计机时(秒)
-sacct -S 2019-01-01T00:00:00 -u admin -o "cputimeraw"|awk 'BEGIN{total=0}{total+=$1}END{print total}'
+1. 统计某用户的机时(秒)
+sacct -S 2019-01-01T00:00:00 -u liuxy -o "jobid,partition,account,alloccpus,cputimeraw,state" -X |awk 'BEGIN{total=0}{total+=$6}END{print total}'
+
+2. 统计某小组的总机时(秒)
+sacct -S 2019-01-01T00:00:00 -A tcm -o "jobid,partition,account,alloccpus,cputimeraw,state" -X |awk 'BEGIN{total=0}{total+=$6}END{print total}'
