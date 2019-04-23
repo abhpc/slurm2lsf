@@ -1,0 +1,8 @@
+#! /bin/bash
+# Output example
+#      Name   Priority  GraceTime PreemptMode UsageFactor
+#---------- ---------- ---------- ----------- -----------
+#    normal          0   00:00:00     cluster    1.000000
+
+
+sacctmgr list qos format="Name,priority,gracetime,preemptmode,usagefactor"
