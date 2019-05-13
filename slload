@@ -5,4 +5,4 @@
 # A36      alloc      16     0.00       31021      0
 # A38      alloc      16     0.00       31079      0
 
-sinfo -o "%8n %10t %6c %10O %10e %8d"
+sinfo -o "%8n %10t %6c %10O %10e %8d" -S "O"
