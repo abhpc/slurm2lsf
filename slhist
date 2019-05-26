@@ -1,0 +1,14 @@
+#! /bin/bash
+# Show the information of jobs
+# Output example:
+# $ slhist -u lily -S 2019-01-01T00:00:00
+#        JobID  Partition    Account      User  AllocCPUS           CPUTimeRAW                State                                            WorkDir
+# ------------ ---------- ---------- --------- ---------- -------------------- -------------------- --------------------------------------------------
+# 52            E5-2640V4 tensorflow      lily         80                   80 COMPLETED            /home/lily/fds-test
+# 53            E5-2640V4 tensorflow      lily         80                    0 COMPLETED            /home/lily/fds-test
+# 54            E5-2640V4 tensorflow      lily         80                    0 COMPLETED            /home/lily/fds-test
+# 55            E5-2640V4 tensorflow      lily         80                    0 COMPLETED            /home/lily/fds-test
+# 56            E5-2640V4 tensorflow      lily         80                    0 COMPLETED            /home/lily/fds-test
+
+ARGS=$*
+sacct -X -o "jobid,partition,account,user,alloccpus,cputimeraw%20,state%-20,workdir%-50" $ARGS
