@@ -1,0 +1,12 @@
+#! /bin/bash
+# Command similar to bhosts
+# Output example:
+#    Cluster    Account       User                  QOS  Partition                        GrpTRES
+# ---------- ---------- ---------- -------------------- ---------- ------------------------------
+#   abhpc-ai       root                          normal
+#   abhpc-ai       root       root               normal
+#   abhpc-ai tensorflow                          normal
+#   abhpc-ai tensorflow      abhpc               normal
+#   abhpc-ai tensorflow       lily               normal                  cpu=40,gres/gpu=4,node=2
+
+sacctmgr list assoc format="Clusters,Account,User,qos,partition,GrpTRES%30"
