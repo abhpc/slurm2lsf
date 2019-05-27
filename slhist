@@ -11,4 +11,4 @@
 # 56            E5-2640V4 tensorflow      lily         80                    0 COMPLETED            /home/lily/fds-test
 
 ARGS=$*
-sacct -X -o "jobid,partition,account,user,alloccpus,cputimeraw%20,state%-20,workdir%-50" $ARGS
+sacct -X -o "jobid,partition,account,user,alloccpus,AllocGRES,cputimeraw%20,state%-20,workdir%-50" $ARGS
