@@ -6,4 +6,4 @@
 # A02      idle       16          0/16/0/16    31082     none
 #
 
-sinfo -o "%8n %10t %6c %.14C %.8e %.8E"
+sinfo -o "%8n %10t %6c %.14C %.8e %.8E %G"
